@@ -1,0 +1,4 @@
+Dashboards.js
+
+Tree үүсгэхийн тулд Host дээрээс group нэр, id авсан. Item дээрээс Host id, name авсан. 
+Дараа нь нийлүүлээд array байсныг tree болгосон.

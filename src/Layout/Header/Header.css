@@ -1,0 +1,12 @@
+.ant-drawer-title {
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: #3B3A39;
+}
+
+.ant-drawer-body::-webkit-scrollbar {
+    display: none;
+  }
