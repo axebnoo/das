@@ -23,9 +23,9 @@ const Siderbar = (props) => {
             key: "0",
         },
         // {
-        //     label: <div to="/a">Dashboard</div>,
-        //     icon: <div><AreaChartOutlined /></div>,
-        //     key: "1",
+            // label: <div to="/a">Dashboard</div>,
+            // icon: <div><AreaChartOutlined /></div>,
+            // key: "1",
         // },
         // {
         //     label: <div to="/a">Dashboard</div>,

@@ -19,10 +19,10 @@ const Login = (props) => {
                 "jsonrpc": "2.0",
                 "method": "user.login",
                 "params": {
-                    "user": "Admin",
-                    "password": "zabbix"
-                    // "user": "customer",
-                    // "password": "RacomDemo1234"
+                    // "user": "Admin",
+                    // "password": "zabbix"
+                    "user": "customer",
+                    "password": "RacomDemo1234"
                 },
                 "auth": null,
                 "id": 0

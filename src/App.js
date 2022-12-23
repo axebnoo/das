@@ -1,11 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { createBrowserHistory } from "history";
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
-import { Provider } from "react-redux";
 import { Layout } from "antd";
 import { UserContext } from './context/UserContext';
-import configureStore from "./configureStore";
-
 import Siderbar from './Siderbar/Siderbar';
 import ButtonIconTrigger from './components/ButtonIconTrigger/ButtonIconTrigger';
 
@@ -19,9 +16,7 @@ import DashboardTemp from './page/DashboardTemp/DashboardTemp';
 import DashboardTemp2 from './page/DashboardTemp2/DashboardTemp2';
 import Dashboard from './page/Dashboard/Dashboard';
 
-
 const { Sider, Content } = Layout;
-const store = configureStore();
 const history = createBrowserHistory();
 
 const App = () => {
@@ -59,7 +54,6 @@ const App = () => {
   }, []);
 
   return (
-    <Provider store={store}>
       <UserContext.Provider value={{ userInfo, setUser }}>
         <Router history={history}>
           {userInfo.isauth ? (
@@ -82,10 +76,11 @@ const App = () => {
               <Layout style={{ backgroundColor: '#F0F2F5' }}>
 
                 {/* <div style={{ position: 'absolute' }}>
-                  {collapsed ?
-                    <ButtonIconTrigger onClick={() => setCollapsed(!collapsed)} collapsed />
-                    : <ButtonIconTrigger onClick={() => setCollapsed(!collapsed)} />}
-                </div> */}
+                      {collapsed ?
+                        <ButtonIconTrigger onClick={() => setCollapsed(!collapsed)} collapsed />
+                        : <ButtonIconTrigger onClick={() => setCollapsed(!collapsed)} />}
+                    </div> 
+                */}
 
                 <Content>
                   <Routes>
@@ -107,7 +102,6 @@ const App = () => {
           )}
         </Router>
       </UserContext.Provider>
-    </Provider>
   );
 }
 

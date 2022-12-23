@@ -1,0 +1,11 @@
+version: '3.7'
+
+services:
+  dashboard-ui:
+    image: dashboard:latest
+    container_name: dashboard
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '80:80'

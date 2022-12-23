@@ -34,7 +34,7 @@ const ButtonIconTrigger = (props) => {
                 borderRadius: '50%',
                 zIndex: 1021
             }}>
-            <div class="css-wf08df-Icon" style={{ display: 'inline-block', lineHeight: 0 }}>
+            <div className="css-wf08df-Icon" style={{ display: 'inline-block', lineHeight: 0 }}>
                 {SVG}
             </div>
         </button>

@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 
-import { Table, Button, Modal, Row, Col, Tabs, List, Tree, Select, Form, Space, Input } from "antd";
+import { Table, Button, Modal, Select, Space } from "antd";
 import { CloseOutlined } from '@ant-design/icons';
 
 const ModalHost = (props) => {
@@ -16,14 +16,14 @@ const ModalHost = (props) => {
     const rowSelection = {
         onChange: (selectedRowKeys, selectedRows) => {
             console.log(`selectedRowKeys: ${selectedRowKeys}`, 'selectedRows: ', selectedRows);
-   
+
             selectedRows = selectedRows.map((item) => {
                 return {
                     'label': item.host,
                     'value': item.hostid,
                 }
             });
-        
+
             props.setSelectHost(selectedRows);
         },
         getCheckboxProps: (record) => ({
@@ -64,10 +64,6 @@ const ModalHost = (props) => {
         maxTagCount: 'responsive',
     };
 
-    const onSelect = () => {
-
-    };
-
 
     return (
         <Modal
@@ -90,12 +86,10 @@ const ModalHost = (props) => {
             }
             okButtonProps={{ size: 'small', style: { fontSize: '12px', padding: '0 10px 10px' } }}
             onOk={(e) => props.setModalHost(false)}
-            // onOk={(e) => onSelect(e)}
             onCancel={(e) => props.setModalHost(false)}
         >
 
             <div>
-
                 <div style={{ display: 'flex', alignItems: 'center', width: '100%', paddingLeft: '40px' }}>
                     <div style={{ color: '#1f2c33', fontSize: '12px', width: '15%' }}>
                         Host group

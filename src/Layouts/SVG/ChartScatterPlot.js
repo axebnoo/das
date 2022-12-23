@@ -2,7 +2,7 @@ import React from 'react';
 
 const ChartScatterPlot = (props) => {
     return (
-        <svg style={{ fill: 'rgb(92, 122, 153)' }} class="icon waveChartIcon" name="chart-thumb-scatter" viewBox="0 0 100 100">
+        <svg style={{ fill: 'rgb(92, 122, 153)' }} name="chart-thumb-scatter" viewBox="0 0 100 100">
             <circle cx="58" cy="65.4" r="6"></circle>
             <circle cx="71" cy="42.4" r="5"></circle>
             <path d="M50.1 36c2.8 0 5-2.3 5-5s-2.3-5-5-5c-2.8 0-5 2.3-5 5s2.1 5 5 5z"></path>
